@@ -24,7 +24,9 @@ class CEFooter extends Component{
     }
       return (
         <div>
-        <div className="container" style={footerStyle}>Copyrigt Custom Google Drive-2018. All Rights Reserved. Design & Developed by:Dharmendra.</div>
+        <div className="row">
+        <div className="col-sm-12" style={footerStyle}>Copyrigt Custom Google Drive-2018. All Rights Reserved. Design & Developed by:Dharmendra.</div>
+        </div>
         </div>
 
     );

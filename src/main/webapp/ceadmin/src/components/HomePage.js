@@ -205,7 +205,7 @@ render() {
 
   }
   let bodycontainerStyle={
-    height:"650px",
+    height:"640px",
     width:"100%",
     font:"30px",
     backgroundColor:"#9ba9c1",
@@ -366,8 +366,8 @@ let listofData=this.state.listofFilesAndFolder.map((data,index)=>{
               <h5>Download the configuration file.</h5>
               <h5>Create Folder  called "credentials" in src/main/resources/ </h5>
 
-              <h4>Move the downloaded file to this project src/main/resources/credentials/ credentials.json</h4>
-              <h4>After placing credentials.json into src/main/resources/credentials/ check by "Check  Authenticated?" Button</h4>
+              <h5>Move the downloaded file to this project src/main/resources/credentials/ credentials.json</h5>
+              <h5>After placing credentials.json into src/main/resources/credentials/ Manually Run main method file "DriveUtils.java" After run this file in browser need to authenticate page will open automatically. After authenticate You can  Upload and See the list of files folders and download  in below given button  link </h5>
               <a href="https://developers.google.com/drive/api/v3/quickstart/java" target="_blank">ENABLE THE DRIVE API</a>
               </div>
 

@@ -80,11 +80,8 @@ import com.google.api.services.drive.DriveScopes;
 	        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(HTTP_TRANSPORT, JSON_FACTORY,
 	                clientSecrets, SCOPES).setDataStoreFactory(new FileDataStoreFactory(CREDENTIALS_FOLDER))
 	                        .setAccessType("offline").build();
-	        System.out.println("Tokkkkkk:"+flow.getAuthorizationServerEncodedUrl()+flow.getClientId()+flow.getScopes()+flow.toString());
-	        Credential c= new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
-	       
-	        System.out.println("token================="+c.getRequestInitializer() );
-	        return c;
+	         Credential c= new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
+	         return c;
 	     
 	        		   }
 	    public static Drive getDriveService() throws IOException {
